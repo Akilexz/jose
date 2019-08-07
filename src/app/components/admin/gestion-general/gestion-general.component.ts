@@ -66,8 +66,8 @@ export class GestionGeneralComponent implements OnInit {
       }]
 
     this.tablaPonentes = 'ponentes';
-    
-    this.tablaAsistentes = 'asistentes'
+
+    this.tablaAsistentes = 'asistentes';
 
     this.deletePonentes = {
       tabla: this.tablaPonentes,
@@ -103,7 +103,7 @@ export class GestionGeneralComponent implements OnInit {
       idPonente: id
     };
     console.log(this.data);
-    localStorage.removeItem('id');
+    // localStorage.removeItem('id');
     localStorage.setItem('id', this.data.idPonente.toString());
     this.router.navigate(['editar-ponente']);
   }
@@ -114,7 +114,7 @@ export class GestionGeneralComponent implements OnInit {
       idAsistente: id
     };
     console.log(this.data);
-    localStorage.removeItem('id');
+    // localStorage.removeItem('id');
     localStorage.setItem('id', this.data.idAsistente.toString());
     this.router.navigate(['editar-asistente']);
   }

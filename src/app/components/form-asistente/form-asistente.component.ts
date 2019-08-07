@@ -3,7 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Asistentes } from 'src/app/models/asistentes';
 import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-asistente',
@@ -14,14 +15,14 @@ export class FormAsistenteComponent implements OnInit {
   data: any
   tabla: string
   asistente: Asistentes
-  title: 'sweetalert'
+  title: 'sweetalert';
 
-  constructor(private http: HttpClient, private router:Router) { }
+  constructor(private http: HttpClient, private router: Router, private fb: FormBuilder) { }
 
   ngOnInit() {
 
     this.asistente = {
-      id:0,
+      id: 0,
       nombres: '',
       apellidos: '',
       email: ''

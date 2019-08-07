@@ -13,17 +13,17 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { EditarAsistenteComponent } from './components/admin/editar-asistente/editar-asistente.component';
 
 const routes: Routes = [
-  {path: 'home', component:HomeComponent},
-  {path: 'form-ponente', component:FormPonenteComponent},
-  {path: 'ponencias', component:PonenciasComponent},
-  {path: 'informacion', component:InformacionComponent},
-  {path: 'form-asistente', component:FormAsistenteComponent},
-  {path: 'gestion', component:GestionGeneralComponent},
-  {path: 'editar-ponente', component:EditarPonenteComponent},
-  {path: 'editar-asistente', component:EditarAsistenteComponent},
-  {path: 'hd', component:HeaderComponent},
-  {path: 'login', component:LoginComponent},
-  {path: 'contact', component:ContactFormComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'form-ponente', component: FormPonenteComponent},
+  {path: 'ponencias', component: PonenciasComponent},
+  {path: 'informacion', component: InformacionComponent},
+  {path: 'form-asistente', component: FormAsistenteComponent},
+  {path: 'gestion', component: GestionGeneralComponent},
+  {path: 'editar-ponente', component: EditarPonenteComponent},
+  {path: 'editar-asistente', component: EditarAsistenteComponent},
+  {path: 'hd', component: HeaderComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'contact', component: ContactFormComponent}
 ];
 
 @NgModule({
